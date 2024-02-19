@@ -180,6 +180,10 @@ form button:active {
     background-color: red;
 }
 
+form label {
+    font-size: 20px;
+}
+
 footer {
     bottom: 0;
     width: 100%;
