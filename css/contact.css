@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 15px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.menu.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    display: none;
+}
+
+.menu.open {
+    display: block;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.menu li {
+    margin: 20px 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: red;
+}
+
+.image-container {
+    color: white;
+}
+
+.image-container h1 {
+    font-size: 20px;
+}
+
+.image-container p {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.image-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.image-container img {
+    width: 200px;
+}
+
+.networks-container {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.networks-container img {
+    width: 88px;
+    height: auto;
+    margin-right: 20px;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: red;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content hr {
+    width: 70%;
+}
