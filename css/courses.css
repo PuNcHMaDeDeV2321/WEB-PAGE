@@ -78,6 +78,11 @@ body {
     color: red;
 }
 
+.telegram {
+    width: 50px;
+    height: 50px;
+}
+
 .image-container {
     color: white;
 }
@@ -110,6 +115,10 @@ body {
 }
 
 .product-container p {
+    color: white;
+}
+
+.product-container h2 {
     color: white;
 }
 
