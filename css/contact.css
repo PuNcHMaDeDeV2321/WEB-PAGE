@@ -78,17 +78,14 @@ body {
     transition: color 0.3s;
 }
 
-.telegram {
-    width: 50px;
-    height: 50px;
-}
-
 .menu a:hover {
     color: red;
 }
 
 .image-container {
     color: white;
+    margin-top: 50px;
+    text-align: center;
 }
 
 .image-container h1 {
@@ -96,13 +93,7 @@ body {
 }
 
 .image-container p {
-    color: white;
     margin-bottom: 50px;
-}
-
-.image-container {
-    margin-top: 50px;
-    text-align: center;
 }
 
 .image-container img {
@@ -130,7 +121,14 @@ body {
     transform: translateY(-8px);
 }
 
-form input.asunto {
+form {
+    color: white;
+    margin: 20px;
+    text-align: center;
+}
+
+form input[type="text"],
+form textarea {
     width: 100%;
     padding: 10px;
     border: 2px solid white;
@@ -140,22 +138,13 @@ form input.asunto {
     box-sizing: border-box;
 }
 
-form input.mensaje {
-    width: 300px;
+form textarea {
     height: 150px;
-    padding: 10px;
-    border: 2px solid white;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: white;
-    box-sizing: border-box;
+    width: calc(100% - 20px);
 }
 
-form button {
+form input[type="submit"] {
     margin-top: 20px;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
     display: block;
     border: none;
     border-radius: 30px;
@@ -171,12 +160,11 @@ form button {
     transition: background-color 0.2s ease;
 }
 
-
-form button:hover {
+form input[type="submit"]:hover {
     background-color: #404b41;
 }
 
-form button:active {
+form input[type="submit"]:active {
     background-color: red;
 }
 

@@ -48,23 +48,12 @@
                 alt=""></a>
     </div>
 
-    <h3 style="color: white; text-align: center;">Enviame un email</h3>
-
-    <form action="" style="color: white;">
-
-        <div>
-            <label for="asunto">Asunto</label>
-        </div>
-        <input type="text" class="asunto" placeholder="(Dejame tu contacto)">
-        <div>
-            <label for="mensaje">Tu Mensaje</label>
-        </div>
-        <input type="text" class="mensaje" placeholder="Dejame aqui tu mensaje. pd: Sauce manda.">
-
-        <div>
-            <button>Enviar</button>
-        </div>
-
+    <form action="https://formspree.io/f/xleqbvpp" method="POST" style="color: white;">
+        <label for="asunto">Asunto:</label><br>
+        <input type="text" id="asunto" name="asunto" required><br>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+        <input type="submit" value="Enviar">
     </form>
 
 
