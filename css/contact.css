@@ -87,7 +87,6 @@ body {
     height: 50px;
 }
 
-
 .image-container {
     color: white;
     margin-top: 50px;
@@ -150,7 +149,7 @@ form textarea {
 }
 
 form input[type="submit"] {
-    margin-top: 20px;
+    margin: 0px auto;
     display: block;
     border: none;
     border-radius: 30px;
@@ -165,6 +164,7 @@ form input[type="submit"] {
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
+
 
 form input[type="submit"]:hover {
     background-color: #404b41;
