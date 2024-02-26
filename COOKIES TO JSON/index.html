@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Cookie Converter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <button type="button" id="modo-btn" onclick="changeMode()"></button>
+
+    <h1>Cookies a JSON</h1>
+    <form>
+        <h3>Coloca tus cookies aqui:</h3>
+        <textarea name="cookie" id="cookie" rows="10" placeholder="Cookies en Texto plano o Base64..." required></textarea>
+        <h3>Tu resultado en JSON:</h3>
+        <textarea name="result" id="result" rows="10" placeholder="Resultado JSON" readonly></textarea>
+        <br>
+        <button type="button" id="btn" onclick="convertirCookies()">Convertir</button>
+    </form>
+    <a href="https://t.me/FreeSauce419">Free Sauce Community</a>
+
+    <script src="./script.js"></script>
+</body>
+</html>
