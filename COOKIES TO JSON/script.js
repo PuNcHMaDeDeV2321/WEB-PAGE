@@ -20,11 +20,16 @@ function convertirCookies() {
 
 function changeMode() {
     var cuerpo = document.body;
-    if (cuerpo.classList.contains("modo-noche")) {
+    var boton = document.getElementById("modo-btn");
+    var textoActual = boton.textContent.trim();
+
+    if (textoActual === "Modo Oscuro") {
         cuerpo.classList.remove("modo-noche");
         cuerpo.classList.add("modo-claro");
+        boton.textContent = "Modo Claro";
     } else {
         cuerpo.classList.remove("modo-claro");
         cuerpo.classList.add("modo-noche");
+        boton.textContent = "Modo Oscuro";
     }
 }

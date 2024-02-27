@@ -61,3 +61,17 @@ h3 {
     background-color: white;
     color: black;
 }
+
+
+#modo-btn {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.modo-noche #modo-btn {
+    background-color: #000000;
+    color: #ffffff;
+}
