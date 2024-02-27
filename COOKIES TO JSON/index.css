@@ -60,7 +60,20 @@ a {
 
 #copy-btn:hover {
     background-color: #0056b3;
+}
 
+#limpiar-btn {
+    padding: 8px 16px;
+    margin-top: 8px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+#limpiar-btn:hover {
+    background-color: #0056b3;
 }
 
 @media (max-width: 767px) {
@@ -69,27 +82,32 @@ a {
     }
 }
 
-.modo-noche {
+/* Modo oscuro */
+.night-mode {
     background-color: black;
     color: white;
 }
 
-.modo-claro {
+/* Modo claro */
+.light-mode {
     background-color: white;
     color: black;
 }
 
-
+/* Estilos para el botón en modo claro */
 #modo-btn {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: black;
+    color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
 
-.modo-noche #modo-btn {
+/* Estilos para el botón en modo oscuro */
+.night-mode #modo-btn {
     background-color: #000000;
-    color: #ffffff;
+    color: #ffffffff;
 }
+
+

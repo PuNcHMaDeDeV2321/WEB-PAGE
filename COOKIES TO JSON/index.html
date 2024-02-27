@@ -9,23 +9,23 @@
 </head>
 
 <body>
+    <button type="button" id="modo-btn" onclick="changeMode()">Iluminate</button>
 
-    <h1>Cookies a JSON</h1>
+    <h1>Cookies</h1>
     <form>
-        <h3>Coloca tus cookies aquí:</h3>
-        <textarea name="cookie" id="cookie" rows="10" placeholder="Cookies en Texto plano o Base64..."
+        <textarea name="cookie" id="cookie" rows="10" placeholder="Cookies in plain text or B64..."
             required></textarea>
-        <h3>Tu resultado en JSON:</h3>
-        <textarea name="result" id="result" rows="10" placeholder="Resultado JSON" readonly></textarea>
+        <h3>JSON:</h3>
+        <textarea name="result" id="result" rows="10" placeholder="Result JSON format" readonly></textarea>
         <br>
-        <button type="button" id="modo-btn" onclick="changeMode()">Modo Oscuro</button>
         <button type="button" id="btn" onclick="convertirCookies()">Convertir</button>
         <button type="button" id="copy-btn" onclick="copyResultToClipboard()">Copiar</button>
+        <button type="button" id="limpiar-btn" onclick="limpiarCampos()">Clear</button>
     </form>
+    <br>
     <a href="https://t.me/FreeSauce419">Free Sauce Community</a>
 
     <script src="./script.js"></script>
 </body>
 
 </html>
-

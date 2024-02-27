@@ -19,18 +19,22 @@ function convertirCookies() {
 }
 
 function changeMode() {
-    var cuerpo = document.body;
+    var body = document.body;
     var boton = document.getElementById("modo-btn");
     var textoActual = boton.textContent.trim();
 
-    if (textoActual === "Modo Oscuro") {
-        cuerpo.classList.remove("modo-noche");
-        cuerpo.classList.add("modo-claro");
-        boton.textContent = "Modo Claro";
+    if (body.classList.contains("night-mode")) {
+        boton.textContent = "Light";
+        setTimeout(function () {
+            body.classList.remove("night-mode");
+            body.classList.add("light-mode");
+        }, 10);
     } else {
-        cuerpo.classList.remove("modo-claro");
-        cuerpo.classList.add("modo-noche");
-        boton.textContent = "Modo Oscuro";
+        boton.textContent = "Dark";
+        setTimeout(function () {
+            body.classList.remove("light-mode");
+            body.classList.add("night-mode");
+        }, 10);
     }
 }
 
