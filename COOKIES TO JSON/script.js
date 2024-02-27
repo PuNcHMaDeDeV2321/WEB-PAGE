@@ -33,3 +33,10 @@ function changeMode() {
         boton.textContent = "Modo Oscuro";
     }
 }
+
+function copyResultToClipboard() {
+    var resultTextArea = document.getElementById("result");
+    resultTextArea.select();
+    document.execCommand("copy");
+    alert("¡El resultado se ha copiado al portapapeles!");
+}

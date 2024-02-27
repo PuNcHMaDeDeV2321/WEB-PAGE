@@ -1,8 +1,10 @@
+<!DOCTYPE html>
 <html>
 
 <head>
     <title>Cookie Converter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/Anonymous.gif" type="image/x-icon">
     <link rel="stylesheet" href="./index.css">
 </head>
 
@@ -10,7 +12,7 @@
 
     <h1>Cookies a JSON</h1>
     <form>
-        <h3>Coloca tus cookies aqui:</h3>
+        <h3>Coloca tus cookies aquí:</h3>
         <textarea name="cookie" id="cookie" rows="10" placeholder="Cookies en Texto plano o Base64..."
             required></textarea>
         <h3>Tu resultado en JSON:</h3>
@@ -18,6 +20,7 @@
         <br>
         <button type="button" id="modo-btn" onclick="changeMode()">Modo Oscuro</button>
         <button type="button" id="btn" onclick="convertirCookies()">Convertir</button>
+        <button type="button" id="copy-btn" onclick="copyResultToClipboard()">Copiar</button>
     </form>
     <a href="https://t.me/FreeSauce419">Free Sauce Community</a>
 
@@ -25,3 +28,4 @@
 </body>
 
 </html>
+
