@@ -44,3 +44,8 @@ function copyResultToClipboard() {
     document.execCommand("copy");
     alert("¡El resultado se ha copiado al portapapeles!");
 }
+
+function limpiarCampos() {
+    document.getElementById("cookie").value = "";
+    document.getElementById("result").value = "";
+}
