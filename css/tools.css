@@ -111,8 +111,7 @@ body {
 }
 
 .product-container img {
-    width: 350px;
-    height: auto;
+    width: 280px;
     margin-right: 20px;
 }
 
@@ -194,5 +193,10 @@ a:hover {
 
     .product-container div {
         text-align: center;
+    }
+
+    .product-container button {
+        width: 150px;
+        font-size: 12px;
     }
 }
