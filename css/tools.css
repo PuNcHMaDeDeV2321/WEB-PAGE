@@ -108,20 +108,18 @@ body {
     padding: 50px;
     border-radius: 10px;
     text-align: center;
+    color: white;
 }
 
 .product-container img {
-    width: 280px;
+    width: 290px;
+    height: auto;
     margin-right: 20px;
 }
 
 .product-container h2 {
     margin: 0;
     margin-left: 10px;
-}
-
-.product-container {
-    color: white;
 }
 
 .product-container button {
@@ -198,5 +196,11 @@ a:hover {
     .product-container button {
         width: 150px;
         font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .product-container p {
+        width: 100%;
     }
 }
